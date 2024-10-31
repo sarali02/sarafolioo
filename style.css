@@ -95,3 +95,25 @@ footer {
 .download-btn:hover {
     background-color: #6C63FF;
 }
+/* Image styling */
+/* Add this to the bottom of style.css */
+
+/* Image styling */
+#photo {
+    width: 100%;
+    max-width: 300px; /* Set a maximum width for desktop */
+    border-radius: 150px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack content on mobile */
+        align-items: center; /* Center-align for better visuals */
+    }
+
+    #photo {
+        width: 80%; /* Scale down image on smaller screens */
+        max-width: 200px; /* Limit maximum size for mobile */
+    }
+}
